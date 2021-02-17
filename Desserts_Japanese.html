@@ -1,0 +1,965 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Food recipes and ingredients perfect for you!">
+	<meta name="keywords" content="HTML, CSS, Food, Love, Eat, Cuisine, Main, Dish, Appetizer, Desserts">
+	<title>Japanese Desserts</title>
+	<link rel="stylesheet" href="footer&header.css">
+	<link href="nav1.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header
+{
+	height: 50px;
+	background: #eaece5;
+	width: 100%;
+	font-family: "Rubik";
+	padding: 5px;
+	position: fixed;
+}
+.logo_area {
+	width:300px;
+	height:300px;
+	position:absolute;
+	left:50%;
+	top:0;
+	margin-left: -25px;
+}
+footer {
+	background-color: #3b3a30;
+	text-align: left;
+	color: white;
+	width:100%;
+	height: 210px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	position: static;
+	bottom: 0;
+}
+@media (max-height:800px){
+	footer {
+		position: static;
+	}
+	header {
+		padding-top:40px;
+	}
+}
+footer .container1 {
+	display:flex;
+	justify-content:space-between;
+}
+footer .container1 .box{
+  flex-basis: 50%;
+  padding: 5px;
+}
+footer .container1 h2 {
+	text-align: center;
+	position: relative;
+	color:white;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.box .content{
+  margin: 10px 0 0 0;
+  position: relative;
+}
+.left .content p{
+  text-align: justify;
+}
+.center .content {
+  font-size: 1.4375rem;
+  text-align: center;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+	color:white;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #DEC2BC;
+}
+.right form input{
+  height: 35px;
+	color: #fff;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #8F7A75;
+	opacity: 10px;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #656352;
+}
+.footer a{
+	background-color: #3b3a30;
+	border: none;
+	color: white;
+	position: absolute;
+	  width: 100%;
+	  height: 15%;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  clear: both;
+}
+fieldset {
+	border: 1px solid black;
+	box-shadow: 5px 10px #656352;
+	width: 80%;
+	margin-top: 0;
+	background: #151515;
+	float: center;
+}
+legend {
+  padding: 0.2em 0.5em;
+  border:1px solid black;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+	font-style: italic;
+	font-weight: 200px;
+	font-family: monospace;
+	background: #8F7A75;
+}
+.sulat{
+	color: gray;
+  font-size: 12px;
+  text-align: center;
+	font-style: italic;
+	font-family: monospace;
+	line-height: 25px;
+}
+.footer a:hover {
+	background-color: #eaece5;
+	color: #3b3a30;
+}
+.card {
+    width: 350px;
+    border: none;
+    box-shadow: 5px 6px 6px 2px black;
+    border-radius: 12px;
+		background: #656352;
+}
+.circle-image img {
+    border: 6px solid #8F7A75;
+    border-radius: 100%;
+    padding: 5px;
+    top: -28px;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    z-index: 1;
+    background: white;
+    cursor: pointer;
+		bottom: 0;
+}
+.help-text {
+    margin-top: -21px;
+}
+.thumb {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    font-size: 18px;
+    border: 1px solid #bbb;
+    line-height: 37px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.fw-500 {
+    font-weight: 500 !important;
+}
+.thumbs-up:hover {
+    color: #fff;
+    background-color: green;
+    border: 1px solid green;
+}
+.thumbs-down:hover {
+    color: #fff;
+    background-color: red;
+    border: 1px solid red;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: absolute;
+    bottom: 0px;
+  }
+  .container1{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .box .content{
+    margin: 5px 0;
+  }
+}
+
+{
+    margin: 0px;
+}
+
+
+div.container
+{
+    font-family: Raleway;
+    margin: 0 auto;
+	padding: 3em 3em;
+	text-align: center;
+}
+
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+.green
+{
+    background: #3b3a30;
+	height: 1px;
+	
+	
+}
+
+/* Top and Bottom borders go out */
+div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
+{
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersOut a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersOut a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* Top and Bottom borders come in */
+div.topBotomBordersIn a:before, div.topBotomBordersIn a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersIn a:before
+{
+    top: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersIn a:after
+{
+    bottom: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* Top border go down and Left border appears */
+div.topLeftBorders a:before
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2px;
+    height: 0px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+div.topLeftBorders a:after
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+div.topLeftBorders a:hover:before
+{
+    height: 100%;
+}
+
+div.topLeftBorders a:hover:after
+{
+    opacity: 0;
+    top: 100%;
+}
+
+/* Circle behind */
+div.circleBehind a:before, div.circleBehind a:after
+{
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #0277bd;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+div.circleBehind a:after
+{
+    border-width: 2px;
+    transition: all 0.4s;
+}
+
+div.circleBehind a:hover:before
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+div.circleBehind a:hover:after
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1.3);
+}
+
+/* Brackets go out */
+div.brackets a:before, div.brackets a:after
+{
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+div.brackets a:before
+{
+    content: '(';
+    left: 0px;
+    transform: translateX(10px);
+}
+
+div.brackets a:after
+{
+    content: ')';
+    right: 0px;
+    transform: translateX(-10px);
+}
+
+div.brackets a:hover:before, div.brackets a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+
+/* Border from Y to X  */
+div.borderYtoX a:before, div.borderYtoX a:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+div.borderYtoX a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.borderYtoX a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+
+/* Border X get width  */
+div.borderXwidth a:before, div.borderXwidth a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+div.borderXwidth a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.borderXwidth a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+
+/* Pull down  */
+div.pullDown a:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullDown a:hover:before
+{
+    height: 50%;
+}
+
+/* Pull up  */
+div.pullUp a:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullUp a:hover:before
+{
+    height: 50%;
+}
+
+/* Pull right  */
+div.pullRight a:before
+{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullRight a:hover:before
+{
+    width: 100%;
+}
+
+/* Pull left  */
+div.pullLeft a:before
+{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullLeft a:hover:before
+{
+    width: 100%;
+}
+
+/* Pull up and down  */
+div.pullUpDown a:before, div.pullUpDown a:after
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullUpDown a:before
+{
+    top: 0px;
+} 
+
+div.pullUpDown a:after
+{
+    bottom: 0px;
+}
+
+div.pullUpDown a:hover:before, div.pullUpDown a:hover:after
+{
+    height: 50%;
+}
+
+/* Pull right and left  */
+div.pullRightLeft a:before, div.pullRightLeft a:after
+{
+    position: absolute;
+    width: 2px;
+    height: 50%;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullRightLeft a:before
+{
+    left: 0px;
+} 
+
+div.pullRightLeft a:after
+{
+    right: 0px;
+}
+
+div.pullRightLeft a:hover:before, div.pullRightLeft a:hover:after
+{
+    width: 100%;
+}
+
+/* Highlight text out  */
+div.highlightTextOut a
+{
+    color: rgba(255, 255, 255, 0.3); 
+}
+
+div.highlightTextOut a:before, div.highlightTextIn a:before
+{
+    position: absolute;
+    color: #FFF;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    overflow: hidden;
+    content: attr(alt);
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+} 
+
+div.highlightTextOut a:hover:before, div.highlightTextIn a:hover:before
+{
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Highlight text in  */
+div.highlightTextIn a
+{
+    color: rgba(0, 0, 0, 0.4); 
+}
+
+div.highlightTextIn a:before
+{
+    transform: scale(1.2);
+} 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  font: 25px Raleway;
+  color: #FFFCFC;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #FFFCFC;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+body {
+
+	background-image: url("Images/cooking_backround2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	backround-position: center;
+}
+p {text-align: center;}
+img {text-align: center;}
+h1 {text-align: center;}
+</style>
+<body>
+
+<header>
+	<div class="logo_area">
+		<div class="logo"><a href="Home.html"><img src="sauteedlogo.png" width="100" height="50"></a></div>
+	</div>
+</header>
+<br><br>
+<nav>
+<div class="container green borderXwidth">
+  <a href = "Desserts_Filipino.html">FILIPINO</a>
+  <a href = "Desserts_Japanese.html">JAPANESE</a>
+  <a href = "Desserts_Chinese.html">CHINESE</a>
+  <a href = "Desserts_Korean.html">KOREAN</a>
+</div>
+</nav>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <h2 style= "color:#EDE7E7";> JAPANESE </h2>
+  <a href="Japanese Appetizer 1.html">Appetizer</a>
+  <a href="maindish_japanese.html">Main Dish</a>
+  <a href="Desserts_Japanese.html">Dessert</a>
+
+</div>
+
+<span style="font: 25px Raleway;cursor:pointer, border-radius: 25px;
+	 color:#EDE7E7;" onclick="openNav()">&#9776; Dishes</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<h1 style="font-family:courier,arial,helvetica; font-size: 80px; color:#EDE7E7" >JAPANESE DESSERTS</h1>
+<br><br><br>
+<h1 style="font-family:courier,arial,helvetica; color:#EDE7E7" >JAPANESE CHEESE CAKE</h1>
+<br><br>
+<p>
+<img src="Japanese Cheese Cake.jpg" width="660px" height="500px" alt="Fast Food Picture">
+<img src="Japanese Cheese Cake.jpg" width="665px" height="500px" alt="Fast Food Picture">
+<br><br><br><br>
+<h2 style="font-family:courier,arial,helvetica; color:#EDE7E7; margin-left: 80px; margin-right: 150px; background: rgba(0, 0, 0, 0.5);">Cake.
+ <br>Course: Desserts
+ <br>Cuisine: Japanese
+ <br>Prep Time: 25 minutes
+ <br>Cook Time: 1 hour 25 minutes
+ <br>Servings: 1 23cm cake
+ <br><br>
+ 
+ Ingredients
+ 
+<br>•	1 Tbsp unsalted butter (for greasing the pan & parchment paper)
+<br>•	6 large eggs (50 g each w/o shell) (10.6 oz, 300 g without shell)
+<br>•	10.6 oz cream cheese
+<br>•	4 Tbsp unsalted butter
+<br>•	3/4 cup heavy (whipping) cream (¾ cup + 4 tsp to be precise)
+<br>•	4 ½ Tbsp sugar
+<br>•	2/3 cup cake flour (10 Tbsp; if you use a measuring cup, fluff your flour with a spoon, sprinkle it into your measuring cup, and use a knife to level it off. Otherwise, your flour ends up with more than 80 g. You can make your Homemade Cake Flour.)
+<br>•	1/2 lemon (for zest)
+<br>•	2 Tbsp lemon juice (about ½ large lemon)
+<br>•	1/2 cup sugar (8 Tbsp; for beating egg whites)
+<br>•	2 Tbsp apricot jam (for glaze)
+<br>•	2 tsp hot water (for glaze)
+<br><br>
+
+<br>Instructions
+<br>1.	Cut parchment paper for the bottom and side of cake pan. You will need a 9” (23 cm) round paper for the bottom, one 4” x 30” (10 x 76 cm) paper for the side of cake pan, and two 2” x 30” (5 x 76 cm) paper strips which will be used for “transporting”.
+<br>2.	Grease the cake pan and parchment paper (for bottom and sides) with butter (15 g). You don't need to use all of it.
+<br>3.	Place the 2 “straps” criss-cross on the bottom of the cake pan. Then place the bottom and side parchment paper. The grease side of the 9” (23 cm) paper should face up, and face in on the 4” x 30” (10 x 76 cm) paper.
+<br>4.	Preheat the oven to 350ºF (180ºC). You will be baking at 320ºF (160ºC) but when you open the oven to place the cheesecake you’ll lose some heat, so we’ll start off a bit higher.
+<br>5.	Please note that it is very important that ingredients are all measured before starting. Separate the 6 eggs into egg yolks and egg whites. Refrigerate the egg whites.
+<br>6.	Set a medium saucepan filled with 2” (5 cm) water and bring to simmer. Add cream cheese (300 g), unsalted butter (60 g), heavy whipping cream (200 ml), and granulated sugar (60 g) in a large bowl. Put the bowl over the saucepan.
+<br>7.	Using a silicone spatula, mash the cream cheese and butter. Once they are melted, use whisk to blend everything together. Remove from the heat.
+<br>8.	In the warm cream cheese mixture add 6 egg yolks, one yolk at a time while whisking. Make sure each egg yolk blended well with the mixing before adding the next one.
+<br>9.	Using a fine-mesh strainer, sift cake flour (80 g) into the batter. Whisk and blend together.
+<br>10.	Then pass the batter through the same fine mesh strainer to a clean large bowl, creating the silky texture for the batter.
+<br>11.	Zest half of a lemon into the batter. Make sure you only zest the yellow part, not the bitter white part. Then squeeze half lemon into a small bowl. Measure lemon juice (30 ml) and add to the batter. Whisk well to blend and set aside.
+<br>12.	Put the baking sheet inside the oven and pour hot water until half way or 1 inch deep. Close the oven.
+<br>13.	Add cold egg whites into a large clean mixing bowl (of the stand mixer). Make sure there is no oil or water in the bowl. If you have space in your refrigerator, I highly recommend keeping the mixing bowl cold until you’re ready to use it. Start whisking on medium speed (speed 4) until the egg whites become opaque, foamy, and bubbly, about 2 minutes. Then slowly add 100 g granulated sugar, ⅓ portion at a time while the mixer runs.
+<br>14.	Once all the sugar has been added, increase the mixer speed to high (speed 8-9) and beat the egg whites until “soft” to “medium” peaks. When lift the whisk, the egg whites shouldn’t fold ribbons (drizzle) anymore. When you turn your whisk upside down, the egg whites should cling to the whisk and hold their shape for a few seconds, but then start to flop over.
+<br>15.	Using a whisk, mix in ⅓ of egg whites into the cream cheese mixture until incorporated. Then gently fold in another ⅓ into the mixture.
+<br>16.	Lastly, pour the mixture back into the mixer bowl (with ⅓ of egg whites still in it) and fold in very gently.
+<br>17.	Pour the mixture into the baking pan in all at once, avoiding air pockets while pouring. Tap the cake pan a few times on the kitchen counter to release any air pockets in the batter.
+<br>18.	Place the cake pan into the baking sheet that’s already in the oven. Reduce the oven temperature to 320ºF (160ºC) and start baking for 70-75 minutes. Then, reduce the oven temperature to 300ºF (150ºC) and bake for another 10 minutes, or until the top is golden brown and the skewer inserted comes out clean. For a convection oven, reduce cooking temperature by 25ºF (15ºC).
+<br>19.	Turn off the oven and leave the oven door ajar for 15-20 minutes with the cake inside. If you take the cake out immediately, the sudden change of temperature could cause the cake to shrink or collapse. You want the cake to slowly shrink down to half the height, roughly from 4 inches to 2 inches. Remove the pan from the oven. Gently pull out the cake using the 2 parchment paper straps (with another set of hand).
+<br>20.	Remove the parchment paper around the cake (leave the bottom one). Combine apricot jam (2 Tbsp) and hot water (2 tsp) in a small bowl. Brush the apricot mixture over the top of the cheesecake. Let cool to room temperature.
+</h2>
+<br><br><br>
+<h1 style="font-family:courier,arial,helvetica; color:#EDE7E7" >SWEET POTATO PIE</h1>
+<br><br>
+<p>
+<img src="Sweet Potato Pie.jpg" width="660px" height="500px" alt="Fast Food Picture">
+<img src="Sweet Potato Pie.jpg" width="665px" height="500px" alt="Fast Food Picture">
+<br><br><br><br>
+<h2 style="font-family:courier,arial,helvetica; color:#EDE7E7; margin-left: 80px; margin-right: 150px; background: rgba(0, 0, 0, 0.5);">Pie.
+ <br>Course: Desserts
+ <br>Cuisine: Japanese
+ <br>Prep Time: 10 minutes
+ <br>Cook Time: 50 minutes
+ <br>Servings: 2 pies 
+ <br><br>
+ 
+ Ingredients
+ 
+<br>• Filling
+<br>•	1 lb Japanese sweet potato (Satsumaimo)
+<br>•	2 frozen sheets puff pastry (I used Pepperidge Farm puffy pastry sheet and each box comes with 2 square sheets)
+<br>•	4 Tbsp sugar
+<br>•	1 Tbsp unsalted butter
+<br>•	1 large egg yolk (for filling)
+<br>•	2 Tbsp heavy (whipping) cream
+<br>•	1 large egg (50 g w/o shell) (for pie)
+<br>•	1 tsp toasted black sesame seeds
+
+<br>Instructions
+<br>1.	Gather all the ingredients. Preheat oven to 400ºF (200ºC). For a convection oven, reduce cooking temperature by 25ºF (15ºC). Place 1 sheet of pastry on a baking sheet that has been lined with parchment paper. Put another pastry sheet on a different sheet of parchment paper. Defrost for 10 minutes at room temperature.
+<br>2.	Cut the pastry sheets in half with a scissor. Now you have 4 rectangular sheets. Then make several slits on 2 sheets that will go on top of the pie.
+<br>3.	Peel the sweet potato and cut it in half lengthwise. Then cut into smaller chunks so they will cook faster.
+<br>4.	In a pot, put sweet potato and cover it with water. Bring it to a boil and cook until a skewer goes through the potatoes smoothly, about 12-15 minutes. Drain water completely and transfer to a large bowl.
+<br>5.	Use a potato masher or fork to mash the sweet potato. Add sugar and butter and keep mixing and add egg yolk and heavy whipping cream and mix well.
+<br>6.	Now you put the sweet potato mixture on the bottom sheets. Keep about half inch space around the rim. Then cover with the top sheet.
+<br>7.	Use a fork to pinch the edges.
+<br>8.	Beat the egg in a small bowl and brush the top of the pastry so it will turn nice golden brown. Sprinkle black sesame seeds on top.
+<br>9.	Bake for 20-25 minutes, or until golden brown. Let cool a bit and ready to serve in 10 minutes.
+
+<br><br><br>
+<h1 style="font-family:courier,arial,helvetica; color:#EDE7E7" >MATCHA GREEN TEA COOKIES</h1>
+<br><br>
+<p>
+<img src="Matcha Cookies.jpg" width="660px" height="500px" alt="Fast Food Picture">
+<img src="Matcha Cookies.jpg" width="665px" height="500px" alt="Fast Food Picture">
+<br><br><br><br>
+<h2 style="font-family:courier,arial,helvetica; color:#EDE7E7; margin-left: 80px; margin-right: 150px; background: rgba(0, 0, 0, 0.5);">Cookies.
+ <br>Course: Desserts
+ <br>Cuisine: Japanese
+ <br>Prep Time: 20 minutes
+ <br>Cook Time: 15 hours
+ <br>Servings: 24 cookies
+ <br>Calories: 193kcal
+ <br><br>
+ 
+ Ingredients
+ 
+<br>•	2 cups all-purpose flour (plain flour) (If you use a measuring cup, follow this method: fluff your flour with a spoon, sprinkle it into your measuring cup, and use a knife to level it off. Otherwise, your flour ends up with more than 240 g.)
+<br>•	2 1/2 Tbsp matcha green tea powder (1 Tbsp matcha is 6 g)
+<br>•	3/4 cup unsalted butter (softened)
+<br>•	1 cup confectioners’ sugar/powdered sugar (1 cup + 2 tsp to be precise)	
+<br>•	pinch kosher/sea salt (I use Diamond Crystal; Use half for table salt)
+<br>•	2 large egg yolks
+<br>•	¼ cup white chocolate chips
+<br><br>
+
+<br>Instructions
+<br>1.	Gather all the ingredients.
+<br>2.	Combine 240 g (2 cups) all-purpose flour and 15 g (2 ½ Tbsp) matcha green tea powder in a large bowl.
+<br>3.	Sift the flour and the matcha powder.
+<br>4.	In a stand mixer with the paddle attachment or in a large bowl with a hand mixer, beat 170 g (¾ cup) unsalted butter until smooth and creamy. It’s important to soften the butter ahead of time.
+<br>5.	Add a pinch of salt and blend.
+<br>6.	Add 130 g (1 cup + 2 tsp) powdered sugar and blend until soft and light. Scrape down the bowl as needed.
+<br>7.	Add 2 large egg yolks and mix well until combined.
+<br>8.	Gradually add the flour and matcha mixture and mix until well-incorporated.
+<br>9.	Add 50 g (¼ cup) white chocolate chips and mix all together.
+<br>10.	Cut the dough in half and shape into 2 cylinders, about 1 ½ inch (4 cm) diameter, 7" (18 cm) long.
+<br>11.	Wrap the logs in plastic wrap and chill in the refrigerator until firm, at least 2 hours. Optional: you can place the logs on a bed of rice while chilling. It’ll keep the dough in a nice cylindrical shape, so your cookie slices won’t be flat on one side. To Store: You can also freeze the unbaked logs of dough, wrapped in plastic wrap, for up to 2 months. To bake, let sit at room temperature for about 10 minutes before cutting and baking. Do not let the dough fully defrost.
+<br>12.	Preheat the oven to 350ºF (175ºC). For a convection oven, reduce cooking temperature by 25ºF (15ºC). Line the baking sheet with parchment paper or silicone baking liner. Remove the dough from the plastic wrap, and with a sharp knife, slice the dough into ⅓ inches (7 mm)-thick rounds. If the dough is too hard, wait for 5 minutes or so. Place them on the baking sheet, leaving about 1” (2.5 cm) between rounds.
+<br>13.	Bake the cookies at 350ºF (175ºC) for about 15 minutes, or until the edge of the cookies starts to get slightly golden brown.
+<br>14.	Remove from the oven and let cool on the baking sheet for 5 minutes; then carefully transfer to a cooling rack and let cool completely.
+</h2>
+ <br><br>
+</p>
+<footer>
+	<div class="container1">
+		<div class="left box">
+			<h2 style="margin-left: -70px; font: 25px Raleway">Survey</h2>
+			<div class="content">
+				<form>
+  				<fieldset>
+  					<legend> Are you satisfied? </legend>
+							<div class="sulat">
+    						<input name="satisfied" type="radio" value="satisfied"> Very Satisfied!
+								<input name="satisfied" type="radio" value="satisfied"> Satisfied!
+								<input name="satisfied" type="radio" value="satisfied"> Not Satisfied.
+    						<br /></div>
+						<legend> Rate us from 1-5 (1 is the highest) </legend>
+							<div class="sulat">
+    						<input name="rate" type="radio" value="rate"> 1
+								<input name="rate" type="radio" value="rate"> 2
+								<input name="rate" type="radio" value="rate"> 3
+								<input name="rate" type="radio" value="rate"> 4
+								<input name="rate" type="radio" value="rate"> 5
+    						<br /></div>
+  				</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="center box">
+			<a href="Home.html"><h2 style="margin-bottom: -25px; margin-left: -70px; font: 25px Raleway"> HOME </h2></a>
+			<div class="container d-flex justify-content-center mt-5">
+				<div class="card text-center mb-5">
+					<div class="circle-image"> <img src="https://i.imgur.com/39fcglK.png" width="50" style="margin-bottom: -55px; margin-left: -300px;"> </div>
+						<small class="help-text"><p style="text-align: center; color: black;"> Help us improve <br></small> <span class="fw-500">Did you like our website?</span></p>
+						<div class="col-md-6"> <span class="thumb thumbs-up" style="margin-bottom: -18px; margin-left: 60px;"><i class="fa fa-thumbs-o-up"></i></span> Yes </div>
+						<div class="col-md-6"> <span class="thumb thumbs-down" style="margin-left: 220px; margin-top: -60px;"><i class="fa fa-thumbs-o-down"></i></span> No </div>
+				</div>
+			</div>
+		</div>
+		<div class="right box">
+			<h2 style="font: 25px Raleway; color:#EDE7E7;">Contact us</h2>
+			<div class="content">
+				<form action="#" id="myForm" onsubmit="return resetFunction();">
+							<input style="font-family: monospace;" type="email" id="email" placeholder="Email *" required>
+					<div class="msg">
+							<textarea rows="2" cols="25" id="msg" placeholder="Message *" required></textarea>
+					</div>
+					<div class="btn">
+						<button type="submit" id="submit" value="submit">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script>
+ 	$("#submit").click(function(){
+		var email = $("#email").val();
+		var msg = $("#msg").val();
+
+		if(email == '' || msg == ''){
+				swal ({
+					title: "Fields empty!",
+					text: "Please check the missing field!",
+					icon: "warning",
+					button: "Ok",
+				});
+				return false;
+			}
+				swal ({
+  				title: "Submitted successfully!",
+  				icon: "success",
+  				button: "Yes!",
+				});
+				return true;
+				document.getElementById("myForm").reset();
+	});
+	function resetFunction() {
+  	document.getElementById("myForm").reset();
+}
+	</script>
+</footer>
+</body>
+</html>

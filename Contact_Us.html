@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="utf-8">
+<meta name="Description" content="This webpage is the about page">
+
+<head>
+	<title>MY Favorite Artist</title>
+	<link href="style_contacts.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">	
+	
+</head>
+<style>
+
+footer {
+	background-color: #3b3a30;
+	padding: 10px;
+	text-align: right;
+	color: white;
+	width:100%;
+	height: 90px;
+	position: sticky;
+	
+}
+
+.footer a{
+	background-color: #3b3a30;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	color: white; 
+	text-decoration: none;
+}
+
+.footer a:hover {
+	background-color: #eaece5;
+	color: #3b3a30;
+	text-decoration: underline;
+}
+
+
+</style>
+<body>
+<header>
+	<div class="logo_area">
+		<div class="logo"><a href="Home.html"><img src="sauteedlogo.png" width="100" height="50"></a></div>
+	</div>
+</header>
+	</br>
+	</br>
+	</br>
+	
+	<h1 style="font-family:courier,arial,helvetica; font-size: 50px; font-weight: bold; color:#ECECC5";>CONTACT US</h1>
+	</br>
+	<p style="font-family:courier,arial,helvetica; font-size: 22px; font-weight: bold; color:#ECECC5">We are here to help and answer any questions you might have. We look forward to hearing from you...</p>
+	<p style="font-family:courier,arial,helvetica; font-size: 22px; font-weight: bold; color:#ECECC5">Telephone no. #8700</p>
+	</br>
+	</br>
+	<div class="container">
+	<form action="contacts.html">
+
+		<label for="fname" style="color:#ECECC5">First Name</label>
+		<input type="text" id="fname" name="firstname" required>
+
+		<label for="lname" style="color:#ECECC5">Last Name</label>
+		<input type="text" id="lname" name="lastname" required>
+		
+		<label for="email" style="color:#ECECC5">Email Address</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="country" style="color:#ECECC5">Country</label>
+		<select id="country" name="country">
+			<option value="australia">AUSTRALIA</option>
+			<option value="canada">CANADA</option>
+			<option value="usa">USA</option>
+			<option value="philippines">PHILIPPINES</option>
+			<option value="japan">JAPAN</option>
+			<option value="korea">KOREA</option>
+			<option value="singapore">SINGAPORE</option>
+		</select>
+		<label for="subject" style="color:#ECECC5">Subject</label>
+		<textarea id="subject" name="subject" placeholder="Go ahead, we're listening..." style="height:200px"required></textarea>
+		<input type="submit" value="Submit">
+		
+	</form>
+	</div>
+	<br><br><br><br>
+<footer>
+<div class="footer a"
+	<br><a href="Home.html">HOME</a>
+	<a href="Contact_Us.html">CONTACT US</a>
+	</br>
+	</br>
+</div>
+</footer>
+</body>
+
+</html>

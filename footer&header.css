@@ -1,0 +1,212 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header
+{
+	height: 50px;
+	background: #eaece5;
+	width: 100%;
+	font-family: "Rubik";
+	padding: 5px;
+	position: fixed;
+}
+.logo_area {
+	width:300px;
+	height:300px;
+	position:absolute;
+	left:50%;
+	top:0;
+	margin-left: -25px;
+}
+footer {
+	background-color: #3b3a30;
+	text-align: left;
+	color: white;
+	width:100%;
+	height: 210px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	position: static;
+	bottom: 0;
+}
+@media (max-height:800px){
+	footer {
+		position: static;
+	}
+	header {
+		padding-top:40px;
+	}
+}
+footer .container1 {
+	display:flex;
+	justify-content:space-between;
+}
+footer .container1 .box{
+  flex-basis: 50%;
+  padding: 5px;
+}
+footer .container1 h2 {
+	text-align: center;
+	position: relative;
+	color:white;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.box .content{
+  margin: 10px 0 0 0;
+  position: relative;
+}
+.left .content p{
+  text-align: justify;
+}
+.center .content {
+  font-size: 1.4375rem;
+  text-align: center;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+	color:white;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #DEC2BC;
+}
+.right form input{
+  height: 35px;
+	color: #fff;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #8F7A75;
+	opacity: 10px;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #656352;
+}
+.footer a{
+	background-color: #3b3a30;
+	border: none;
+	color: white;
+	position: absolute;
+	  width: 100%;
+	  height: 15%;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  clear: both;
+}
+fieldset {
+	border: 1px solid black;
+	box-shadow: 5px 10px #656352;
+	width: 80%;
+	margin-top: 0;
+	background: #151515;
+	float: center;
+}
+legend {
+  padding: 0.2em 0.5em;
+  border:1px solid black;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+	font-style: italic;
+	font-weight: 200px;
+	font-family: monospace;
+	background: #8F7A75;
+}
+.sulat{
+	color: gray;
+  font-size: 12px;
+  text-align: center;
+	font-style: italic;
+	font-family: monospace;
+	line-height: 25px;
+}
+.footer a:hover {
+	background-color: #eaece5;
+	color: #3b3a30;
+}
+.card {
+    width: 350px;
+    border: none;
+    box-shadow: 5px 6px 6px 2px black;
+    border-radius: 12px;
+		background: #656352;
+}
+.circle-image img {
+    border: 6px solid #8F7A75;
+    border-radius: 100%;
+    padding: 5px;
+    top: -28px;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    z-index: 1;
+    background: white;
+    cursor: pointer;
+		bottom: 0;
+}
+.help-text {
+    margin-top: -21px;
+}
+.thumb {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    font-size: 18px;
+    border: 1px solid #bbb;
+    line-height: 37px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.fw-500 {
+    font-weight: 500 !important;
+}
+.thumbs-up:hover {
+    color: #fff;
+    background-color: green;
+    border: 1px solid green;
+}
+.thumbs-down:hover {
+    color: #fff;
+    background-color: red;
+    border: 1px solid red;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: absolute;
+    bottom: 0px;
+  }
+  .container1{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .box .content{
+    margin: 5px 0;
+  }
+}

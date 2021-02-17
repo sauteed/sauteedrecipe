@@ -1,0 +1,52 @@
+header
+{
+	height: 50px;
+	background: #eaece5;
+	width: 100%;
+	font-family: "Rubik";
+	padding: 5px;
+	position: fixed;
+}
+
+body{
+	background-image: url("Images/cooking_backround2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	backround-position: center;
+}
+
+footer {
+	background-color: #3b3a30;
+	text-align: left;
+	color: white;
+	width:100%;
+	height: auto;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	position: fixed;
+	bottom: 0;
+}
+
+.container{
+	margin-top: 500px;
+}
+
+.card {
+    border: none;
+    box-shadow: 5px 6px 6px 2px black;
+    border-radius: 12px;
+	background: #656352;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.a{
+	backround: white;
+}
+
+.card h1, p{
+	color: white;
+	
+}
+
